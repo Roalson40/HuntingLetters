@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+  /*Image only BG fallback*/
+  background-color: black;
+  color: #222;
+  /*background = gradient + image pattern combo*/
+}
+
+#msform {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#msform fieldset {
+  background-color: black;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 50%;
+  min-width: 800px;
+  overflow-x: auto;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+.elcText{
+  color: white;
+  font-size: 30px;
+}
+
+.elcText1{
+  color: white;
+  font-size: 30px;
+}
+
+.correct{
+  color: lawngreen;
+}
+
+.wrong{
+  color: red;
+}
