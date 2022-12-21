@@ -1,5 +1,5 @@
 let subLevel = "A";
-let characters = new Array("a","b","c",);
+let characters = new Array("a","b","c");
 let index = 0;
 
 window.onload = function (){
@@ -245,11 +245,14 @@ function check1(click) {
           clearInterval(huntingLetter1);
           if (index === 3) {
             document.getElementById('fieldset1').style.display = 'none';
-            document.getElementById('fieldset2').style.display = 'block';
+            document.getElementById('fieldset2').style.display = 'none';
+            document.getElementById('fieldset3').style.display = 'block';
+            document.getElementById('fieldset4').style.display = 'none';
+            document.getElementById('fieldset5').style.display = 'none';
             index = 0;
             subLevel="B";
             document.getElementById('subLevel').innerHTML = "SubLevel : " + subLevel;
-          ou1();
+           ou1();
           }
         }
       }, 300)
