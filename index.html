@@ -14,6 +14,11 @@
 <body>
 
 <div id="nav" style="width: 100%">
+
+  <button class="change" type="button" onclick="change()">change</button>
+
+  <button class="fresh" type="button" onclick="fresh()">fresh</button>
+
   <div style="margin-top: 1%">
     <label id="time" style="color:white; font-size: 25px">Time : 150</label>
     <br>
@@ -24,7 +29,10 @@
     <label id="subLevel" style="color:white; font-size: 25px">SubLevel : A</label>
     <br>
     <br>
-    <label id="counter-label" style="color:white; font-size: 25px">Score : 2000</label>
+    <label id="counter-label" style="color:white; font-size: 25px">Score : 0</label>
+    <br>
+    <br>
+    <label id="eye" style="color:white; font-size: 25px; display: none">Which eye : Right eye</label>
   </div>
 </div>
 
@@ -372,7 +380,7 @@
       style="cursor:pointer;">l</span>
 
       <span id="Echar400" class="elcText1 p" style="cursor:pointer;">p</span><span id="Echar401" class="elcText1 o" style="cursor:pointer;">o</span><span id="Echar402" class="elcText1 u"
-      style="cursor:pointer;">u</span><span id="Echar403" class="elcText1 d" style="cursor:pointer;">d</span>
+      style="cursor:pointer;">u</span><span id="Echar403" class="elcText1 d2" style="cursor:pointer;">d</span>
 
       <span id="Echar404" class="elcText1 h" style="cursor:pointer;">h</span><span id="Echar405" class="elcText1 i" style="cursor:pointer;">i</span><span id="Echar406" class="elcText1 r"
       style="cursor:pointer;">r</span><span id="Echar407" class="elcText1 v" style="cursor:pointer;">v</span>
@@ -1566,25 +1574,232 @@
       <span id="Echar2945" class="elcText2 l3" style="cursor:pointer;">l</span><span id="Echar2946" class="elcText2 e3" style="cursor:pointer;">e</span><span
       id="Echar2947" class="elcText2 n" style="cursor:pointer;">n</span><span id="Echar2948" class="elcText2 e3" style="cursor:pointer;">e</span>
 
-      <span id="Echar2949" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2950" class="elcText2 h3" style="cursor:pointer;">h</span><span
-      id="Echar2951" class="elcText2 h3" style="cursor:pointer;">h</span>
+      <span id="Echar2949" class="elcText2 o" style="cursor:pointer;">o</span><span id="Echar2950" class="elcText2 r" style="cursor:pointer;">r</span><span
+      id="Echar2951" class="elcText2 t" style="cursor:pointer;">t</span>
 
-      <span id="Echar2952" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2953" class="elcText2 h3" style="cursor:pointer;">h</span><span
-      id="Echar2954" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2955" class="elcText2 h3" style="cursor:pointer;">h</span>
+      <span id="Echar2952" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar2953" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar2954" class="elcText2 n" style="cursor:pointer;">n</span><span id="Echar2955" class="elcText2 t" style="cursor:pointer;">t</span>
 
-      <span id="Echar2956" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2957" class="elcText2 h3" style="cursor:pointer;">h</span><span
-      id="Echar2958" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2959" class="elcText2 h3" style="cursor:pointer;">h</span><span
-      id="Echar2960" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2961" class="elcText2 h3" style="cursor:pointer;">h</span><span
-      id="Echar2962" class="elcText2 h3" style="cursor:pointer;">h</span>
+      <span id="Echar2956" class="elcText2 s" style="cursor:pointer;">s</span><span id="Echar2957" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar2958" class="elcText2 r" style="cursor:pointer;">r</span><span id="Echar2959" class="elcText2 s" style="cursor:pointer;">s</span><span
+      id="Echar2960" class="elcText2 o" style="cursor:pointer;">o</span><span id="Echar2961" class="elcText2 m3" style="cursor:pointer;">m</span><span
+      id="Echar2962" class="elcText2 ." style="cursor:pointer;">.</span>
 
-      <span id="Echar2963" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2964" class="elcText2 h3" style="cursor:pointer;">h</span><span
-      id="Echar2965" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2966" class="elcText2 h3" style="cursor:pointer;">h</span>
+      <span id="Echar2963" class="elcText2 c3" style="cursor:pointer;">C</span><span id="Echar2964" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar2965" class="elcText2 i3" style="cursor:pointer;">i</span><span id="Echar2966" class="elcText2 b3" style="cursor:pointer;">b</span>
     </div>
 
     <div id="okc9">
+      <span id="Echar2967" class="elcText2 l3" style="cursor:pointer;">L</span><span id="Echar2968" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar2969" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar2970" class="elcText2 s" style="cursor:pointer;">s</span>
+
+      <span id="Echar2971" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar2972" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar2973" class="elcText2 n" style="cursor:pointer;">n</span><span id="Echar2974" class="elcText2 o" style="cursor:pointer;">o</span>
+
+      <span id="Echar2975" class="elcText2 d3" style="cursor:pointer;">d</span><span id="Echar2976" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar2977" class="elcText2 r" style="cursor:pointer;">r</span><span id="Echar2978" class="elcText2 c3" style="cursor:pointer;">c</span>
+
+      <span id="Echar2979" class="elcText2 f3" style="cursor:pointer;">f</span><span id="Echar2980" class="elcText2 y" style="cursor:pointer;">y</span><span
+      id="Echar2981" class="elcText2 m3" style="cursor:pointer;">m</span>
+
+      <span id="Echar2982" class="elcText2 b3" style="cursor:pointer;">b</span><span id="Echar2983" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar2984" class="elcText2 x" style="cursor:pointer;">x</span>
+
+      <span id="Echar2985" class="elcText2 o" style="cursor:pointer;">o</span><span id="Echar2986" class="elcText2 m3" style="cursor:pointer;">m</span><span
+      id="Echar2987" class="elcText2 c3" style="cursor:pointer;">c</span>
+
+      <span id="Echar2988" class="elcText2 z" style="cursor:pointer;">z</span><span id="Echar2989" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar2990" class="elcText2 h3" style="cursor:pointer;">h</span><span id="Echar2991" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar2992" class="elcText2 t" style="cursor:pointer;">T</span><span id="Echar2993" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar2994" class="elcText2 u" style="cursor:pointer;">u</span><span id="Echar2995" class="elcText2 g3" style="cursor:pointer;">g</span>
+
+      <span id="Echar2996" class="elcText2 d3" style="cursor:pointer;">d</span><span id="Echar2997" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar2998" class="elcText2 j3" style="cursor:pointer;">j</span>
+
+      <span id="Echar2999" class="elcText2 k3" style="cursor:pointer;">k</span><span id="Echar3000" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar3001" class="elcText2 l3" style="cursor:pointer;">l</span><span id="Echar3002" class="elcText2 h3" style="cursor:pointer;">h</span>
+
+      <span id="Echar3003" class="elcText2 x" style="cursor:pointer;">x</span><span id="Echar3004" class="elcText2 y" style="cursor:pointer;">y</span><span
+      id="Echar3005" class="elcText2 p" style="cursor:pointer;">p</span>
+
+      <span id="Echar3006" class="elcText2 g3" style="cursor:pointer;">g</span><span id="Echar3007" class="elcText2 r" style="cursor:pointer;">r</span><span
+      id="Echar3008" class="elcText2 o" style="cursor:pointer;">o</span><span id="Echar3009" class="elcText2 w" style="cursor:pointer;">w</span>
+
+      <span id="Echar3010" class="elcText2 z" style="cursor:pointer;">z</span><span id="Echar3011" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3012" class="elcText2 l3" style="cursor:pointer;">l</span>
+
+      <span id="Echar3013" class="elcText2 f3" style="cursor:pointer;">f</span><span id="Echar3014" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3015" class="elcText2 v" style="cursor:pointer;">v</span>
+
+      <span id="Echar3016" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3017" class="elcText2 l3" style="cursor:pointer;">l</span><span
+      id="Echar3018" class="elcText2 o" style="cursor:pointer;">o</span><span id="Echar3019" class="elcText2 m3" style="cursor:pointer;">m</span><span
+      id="Echar3020" class="elcText2 s" style="cursor:pointer;">s</span><span id="Echar3021" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3022" class="elcText2 i3" style="cursor:pointer;">I</span><span id="Echar3023" class="elcText2 k3" style="cursor:pointer;">k</span><span
+      id="Echar3024" class="elcText2 n" style="cursor:pointer;">n</span>
+
+      <span id="Echar3025" class="elcText2 z" style="cursor:pointer;">z</span><span id="Echar3026" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3027" class="elcText2 r" style="cursor:pointer;">r</span><span id="Echar3028" class="elcText2 t" style="cursor:pointer;">t</span>
+
+      <span id="Echar3029" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar3030" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3031" class="elcText2 m3" style="cursor:pointer;">m</span><span id="Echar3032" class="elcText2 g3" style="cursor:pointer;">g</span>
+
+      <span id="Echar3033" class="elcText2 b3" style="cursor:pointer;">b</span><span id="Echar3034" class="elcText2 y" style="cursor:pointer;">y</span><span
+      id="Echar3035" class="elcText2 h3" style="cursor:pointer;">h</span>
+
+      <span id="Echar3036" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar3037" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3038" class="elcText2 w" style="cursor:pointer;">w</span><span id="Echar3039" class="elcText2 t" style="cursor:pointer;">t</span>
+
+      <span id="Echar3040" class="elcText2 v" style="cursor:pointer;">v</span><span id="Echar3041" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3042" class="elcText2 x" style="cursor:pointer;">x</span><span id="Echar3043" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3044" class="elcText2 c3" style="cursor:pointer;">C</span><span id="Echar3045" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3046" class="elcText2 s" style="cursor:pointer;">s</span><span id="Echar3047" class="elcText2 n" style="cursor:pointer;">n</span>
+
+      <span id="Echar3048" class="elcText2 q" style="cursor:pointer;">q</span><span id="Echar3049" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3050" class="elcText2 o" style="cursor:pointer;">o</span><span id="Echar3051" class="elcText2 r" style="cursor:pointer;">r</span><span
+      id="Echar3052" class="elcText2 k3" style="cursor:pointer;">k</span>
+
+      <span id="Echar3053" class="elcText2 f3" style="cursor:pointer;">f</span><span id="Echar3054" class="elcText2 y" style="cursor:pointer;">y</span><span
+      id="Echar3055" class="elcText2 r" style="cursor:pointer;">r</span><span id="Echar3056" class="elcText2 z" style="cursor:pointer;">z</span>
+
+      <span id="Echar3057" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3058" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3059" class="elcText2 c3" style="cursor:pointer;">c</span>
+
+      <span id="Echar3060" class="elcText2 b3" style="cursor:pointer;">b</span><span id="Echar3061" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3062" class="elcText2 s" style="cursor:pointer;">s</span><span id="Echar3063" class="elcText2 e3" style="cursor:pointer;">e</span>
+
+      <span id="Echar3064" class="elcText2 b3" style="cursor:pointer;">b</span><span id="Echar3065" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3066" class="elcText2 j3" style="cursor:pointer;">j</span><span id="Echar3067" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3068" class="elcText2 p" style="cursor:pointer;">P</span><span id="Echar3069" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3070" class="elcText2 z" style="cursor:pointer;">z</span>
+
+      <span id="Echar3071" class="elcText2 w" style="cursor:pointer;">w</span><span id="Echar3072" class="elcText2 r" style="cursor:pointer;">r</span><span
+      id="Echar3073" class="elcText2 e3" style="cursor:pointer;">e</span><span id="Echar3074" class="elcText2 n" style="cursor:pointer;">n</span><span
+      id="Echar3075" class="elcText2 k3" style="cursor:pointer;">k</span>
+
+      <span id="Echar3076" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3077" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3078" class="elcText2 x" style="cursor:pointer;">x</span>
+
+      <span id="Echar3079" class="elcText2 d3" style="cursor:pointer;">d</span><span id="Echar3080" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3081" class="elcText2 f3" style="cursor:pointer;">f</span>
+
+      <span id="Echar3082" class="elcText2 s" style="cursor:pointer;">s</span><span id="Echar3083" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3084" class="elcText2 w" style="cursor:pointer;">w</span><span id="Echar3085" class="elcText2 b3" style="cursor:pointer;">b</span><span
+      id="Echar3086" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3087" class="elcText2 s" style="cursor:pointer;">S</span><span id="Echar3088" class="elcText2 t" style="cursor:pointer;">t</span><span
+      id="Echar3089" class="elcText2 u" style="cursor:pointer;">u</span><span id="Echar3090" class="elcText2 l3" style="cursor:pointer;">l</span><span
+      id="Echar3091" class="elcText2 h3" style="cursor:pointer;">h</span>
+
+      <span id="Echar3092" class="elcText2 y" style="cursor:pointer;">y</span><span id="Echar3093" class="elcText2 m3" style="cursor:pointer;">m</span>
+
     </div>
 
     <div id="okc10">
+      <span id="Echar3094" class="elcText2 n" style="cursor:pointer;">N</span><span id="Echar3095" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3096" class="elcText2 w" style="cursor:pointer;">w</span><span id="Echar3097" class="elcText2 h3" style="cursor:pointer;">h</span>
+
+      <span id="Echar3098" class="elcText2 g3" style="cursor:pointer;">g</span><span id="Echar3099" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar3100" class="elcText2 l3" style="cursor:pointer;">l</span><span id="Echar3101" class="elcText2 f3" style="cursor:pointer;">f</span>
+
+      <span id="Echar3102" class="elcText2 s" style="cursor:pointer;">s</span><span id="Echar3103" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3104" class="elcText2 v" style="cursor:pointer;">v</span>
+
+      <span id="Echar3105" class="elcText2 y" style="cursor:pointer;">y</span><span id="Echar3106" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar3107" class="elcText2 x" style="cursor:pointer;">x</span><span id="Echar3108" class="elcText2 p" style="cursor:pointer;">p</span>
+
+      <span id="Echar3109" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3110" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3111" class="elcText2 a3" style="cursor:pointer;">a</span><span id="Echar3112" class="elcText2 l3" style="cursor:pointer;">l</span>
+
+      <span id="Echar3113" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar3114" class="elcText2 r" style="cursor:pointer;">r</span><span
+      id="Echar3115" class="elcText2 o" style="cursor:pointer;">o</span><span id="Echar3116" class="elcText2 m3" style="cursor:pointer;">m</span><span
+      id="Echar3117" class="elcText2 b3" style="cursor:pointer;">b</span>
+
+      <span id="Echar3118" class="elcText2 z" style="cursor:pointer;">z</span><span id="Echar3119" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3120" class="elcText2 d3" style="cursor:pointer;">d</span>
+
+      <span id="Echar3121" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar3122" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3123" class="elcText2 y" style="cursor:pointer;">y</span>
+
+      <span id="Echar3124" class="elcText2 n" style="cursor:pointer;">n</span><span id="Echar3125" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3126" class="elcText2 l3" style="cursor:pointer;">l</span><span id="Echar3127" class="elcText2 c3" style="cursor:pointer;">c</span>
+
+      <span id="Echar3128" class="elcText2 g3" style="cursor:pointer;">g</span><span id="Echar3129" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3130" class="elcText2 m3" style="cursor:pointer;">m</span>
+
+      <span id="Echar3131" class="elcText2 s" style="cursor:pointer;">s</span><span id="Echar3132" class="elcText2 t" style="cursor:pointer;">t</span><span
+      id="Echar3133" class="elcText2 i3" style="cursor:pointer;">i</span><span id="Echar3134" class="elcText2 d3" style="cursor:pointer;">d</span>
+
+      <span id="Echar3135" class="elcText2 u" style="cursor:pointer;">u</span><span id="Echar3136" class="elcText2 h3" style="cursor:pointer;">h</span><span
+      id="Echar3137" class="elcText2 k3" style="cursor:pointer;">k</span><span id="Echar3138" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3139" class="elcText2 p" style="cursor:pointer;">P</span><span id="Echar3140" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar3141" class="elcText2 r" style="cursor:pointer;">r</span><span id="Echar3142" class="elcText2 z" style="cursor:pointer;">z</span>
+
+      <span id="Echar3143" class="elcText2 y" style="cursor:pointer;">y</span><span id="Echar3144" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3145" class="elcText2 s" style="cursor:pointer;">s</span>
+
+      <span id="Echar3146" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3147" class="elcText2 h3" style="cursor:pointer;">h</span><span
+      id="Echar3148" class="elcText2 u" style="cursor:pointer;">u</span><span id="Echar3149" class="elcText2 w" style="cursor:pointer;">w</span><span
+      id="Echar3150" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3151" class="elcText2 s" style="cursor:pointer;">S</span><span id="Echar3152" class="elcText2 n" style="cursor:pointer;">n</span><span
+      id="Echar3153" class="elcText2 a3" style="cursor:pointer;">a</span><span id="Echar3154" class="elcText2 t" style="cursor:pointer;">t</span>
+
+      <span id="Echar3155" class="elcText2 f3" style="cursor:pointer;">f</span><span id="Echar3156" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3157" class="elcText2 g3" style="cursor:pointer;">g</span><span id="Echar3158" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3159" class="elcText2 r" style="cursor:pointer;">r</span>
+
+      <span id="Echar3160" class="elcText2 q" style="cursor:pointer;">q</span><span id="Echar3161" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3162" class="elcText2 a3" style="cursor:pointer;">a</span><span id="Echar3163" class="elcText2 p" style="cursor:pointer;">p</span>
+
+      <span id="Echar3164" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3165" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3166" class="elcText2 z" style="cursor:pointer;">z</span>
+
+      <span id="Echar3167" class="elcText2 v" style="cursor:pointer;">v</span><span id="Echar3168" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3169" class="elcText2 b3" style="cursor:pointer;">b</span><span id="Echar3170" class="elcText2 y" style="cursor:pointer;">y</span><span
+      id="Echar3171" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3172" class="elcText2 h3" style="cursor:pointer;">H</span><span id="Echar3173" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3174" class="elcText2 w" style="cursor:pointer;">w</span><span id="Echar3175" class="elcText2 x" style="cursor:pointer;">x</span>
+
+      <span id="Echar3176" class="elcText2 m3" style="cursor:pointer;">m</span><span id="Echar3177" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3178" class="elcText2 l3" style="cursor:pointer;">l</span><span id="Echar3179" class="elcText2 k3" style="cursor:pointer;">k</span>
+
+      <span id="Echar3180" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3181" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar3182" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar3183" class="elcText2 i3" style="cursor:pointer;">i</span><span
+      id="Echar3184" class="elcText2 t" style="cursor:pointer;">t</span>
+
+      <span id="Echar3185" class="elcText2 d3" style="cursor:pointer;">d</span><span id="Echar3186" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3187" class="elcText2 w" style="cursor:pointer;">w</span>
+
+      <span id="Echar3188" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar3189" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3190" class="elcText2 c3" style="cursor:pointer;">c</span><span id="Echar3191" class="elcText2 y" style="cursor:pointer;">y</span>
+
+      <span id="Echar3192" class="elcText2 a3" style="cursor:pointer;">a</span><span id="Echar3193" class="elcText2 r" style="cursor:pointer;">r</span><span
+      id="Echar3194" class="elcText2 j3" style="cursor:pointer;">j</span>
+
+      <span id="Echar3195" class="elcText2 k3" style="cursor:pointer;">k</span><span id="Echar3196" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar3197" class="elcText2 t" style="cursor:pointer;">t</span><span id="Echar3198" class="elcText2 s" style="cursor:pointer;">s</span>
+
+      <span id="Echar3199" class="elcText2 r" style="cursor:pointer;">r</span><span id="Echar3200" class="elcText2 e3" style="cursor:pointer;">e</span><span
+      id="Echar3201" class="elcText2 z" style="cursor:pointer;">z</span><span id="Echar3202" class="elcText2 o" style="cursor:pointer;">o</span><span
+      id="Echar3203" class="elcText2 d3" style="cursor:pointer;">d</span><span id="Echar3204" class="elcText2 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3205" class="elcText2 u" style="cursor:pointer;">U</span><span id="Echar3206" class="elcText2 l3" style="cursor:pointer;">l</span><span
+      id="Echar3207" class="elcText2 b3" style="cursor:pointer;">b</span>
+
+      <span id="Echar3208" class="elcText2 c3" style="cursor:pointer;">c</span><span id="Echar3209" class="elcText2 h3" style="cursor:pointer;">h</span><span
+      id="Echar3210" class="elcText2 u" style="cursor:pointer;">u</span><span id="Echar3211" class="elcText2 d3" style="cursor:pointer;">d</span>
+
+      <span id="Echar3212" class="elcText2 z" style="cursor:pointer;">z</span><span id="Echar3213" class="elcText2 a3" style="cursor:pointer;">a</span><span
+      id="Echar3214" class="elcText2 r" style="cursor:pointer;">r</span><span id="Echar3215" class="elcText2 f3" style="cursor:pointer;">f</span>
+
+      <span id="Echar3216" class="elcText2 p" style="cursor:pointer;">p</span><span id="Echar3217" class="elcText2 u" style="cursor:pointer;">u</span><span
+      id="Echar3218" class="elcText2 m3" style="cursor:pointer;">m</span><span id="Echar3219" class="elcText2 ." style="cursor:pointer;">.</span>
     </div>
   </fieldset>
 
@@ -1594,6 +1809,440 @@
     <br>
     <br>
 
+    <div id="okd1">
+      <span id="Echar3500" class="elcText3 h4" style="cursor:pointer;">H</span><span id="Echar3501" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3502" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3503" class="elcText3 z4" style="cursor:pointer;">z</span>
+
+      <span id="Echar3504" class="elcText3 k4" style="cursor:pointer;">k</span><span id="Echar3505" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3506" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3507" class="elcText3 l4" style="cursor:pointer;">l</span><span
+      id="Echar3508" class="elcText3 e4" style="cursor:pointer;">e</span>
+
+      <span id="Echar3509" class="elcText3 dh4" style="cursor:pointer;">d</span><span id="Echar3510" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3511" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3512" class="elcText3 t4" style="cursor:pointer;">t</span><span
+      id="Echar3513" class="elcText3 h4" style="cursor:pointer;">h</span>
+
+      <span id="Echar3514" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3515" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3516" class="elcText3 c4" style="cursor:pointer;">c</span><span id="Echar3517" class="elcText3 k4" style="cursor:pointer;">k</span><span
+      id="Echar3518" class="elcText3 e4" style="cursor:pointer;">e</span>
+
+      <span id="Echar3519" class="elcText3 h4" style="cursor:pointer;">h</span><span id="Echar3520" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3521" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3522" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3523" class="elcText3 k4" style="cursor:pointer;">k</span><span id="Echar3524" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3525" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3526" class="elcText3 y4" style="cursor:pointer;">y</span><span
+      id="Echar3527" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3528" class="elcText3 c4" style="cursor:pointer;">C</span><span id="Echar3529" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3530" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3531" class="elcText3 h4" style="cursor:pointer;">h</span>
+
+      <span id="Echar3532" class="elcText3 p4" style="cursor:pointer;">p</span><span id="Echar3533" class="elcText3 y4" style="cursor:pointer;">y</span><span
+      id="Echar3534" class="elcText3 l4" style="cursor:pointer;">l</span>
+
+      <span id="Echar3535" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3536" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3537" class="elcText3 f4" style="cursor:pointer;">f</span><span id="Echar3538" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3539" class="elcText3 d4" style="cursor:pointer;">d</span>
+
+      <span id="Echar3540" class="elcText3 k4" style="cursor:pointer;">k</span><span id="Echar3541" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3542" class="elcText3 h4" style="cursor:pointer;">h</span>
+
+      <span id="Echar3543" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3544" class="elcText3 h4" style="cursor:pointer;">h</span><span
+      id="Echar3545" class="elcText3 e4" style="cursor:pointer;">e</span><span id="Echar3546" class="elcText3 r4" style="cursor:pointer;">r</span>
+
+      <span id="Echar3547" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3548" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3549" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3550" class="elcText3 v4" style="cursor:pointer;">v</span><span
+      id="Echar3551" class="elcText3 i4" style="cursor:pointer;">i</span><span id="Echar3552" class="elcText3 k4" style="cursor:pointer;">k</span>
+
+      <span id="Echar3553" class="elcText3 d4" style="cursor:pointer;">d</span><span id="Echar3554" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3555" class="elcText3 t4" style="cursor:pointer;">t</span>
+
+      <span id="Echar3556" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3557" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3558" class="elcText3 z4" style="cursor:pointer;">z</span><span id="Echar3559" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3560" class="elcText3 p4" style="cursor:pointer;">p</span>
+
+      <span id="Echar3561" class="elcText3 j4" style="cursor:pointer;">j</span><span id="Echar3562" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3563" class="elcText3 f4" style="cursor:pointer;">f</span><span id="Echar3564" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3565" class="elcText3 g4" style="cursor:pointer;">G</span><span id="Echar3566" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3567" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3568" class="elcText3 o4" style="cursor:pointer;">o</span>
+
+      <span id="Echar3569" class="elcText3 p4" style="cursor:pointer;">p</span><span id="Echar3570" class="elcText3 h4" style="cursor:pointer;">h</span><span
+      id="Echar3571" class="elcText3 o4" style="cursor:pointer;">o</span><span id="Echar3572" class="elcText3 t4" style="cursor:pointer;">t</span><span
+      id="Echar3573" class="elcText3 s4" style="cursor:pointer;">s</span>
+
+      <span id="Echar3574" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3575" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3576" class="elcText3 j4" style="cursor:pointer;">j</span>
+
+      <span id="Echar3577" class="elcText3 p4" style="cursor:pointer;">p</span><span id="Echar3578" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3579" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3580" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3581" class="elcText3 l4" style="cursor:pointer;">l</span>
+
+      <span id="Echar3582" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3583" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3584" class="elcText3 k4" style="cursor:pointer;">k</span>
+
+      <span id="Echar3585" class="elcText3 d4" style="cursor:pointer;">d</span><span id="Echar3586" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3587" class="elcText3 j4" style="cursor:pointer;">j</span>
+
+      <span id="Echar3588" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3589" class="elcText3 r4" style="cursor:pointer;">r</span><span
+      id="Echar3590" class="elcText3 u4" style="cursor:pointer;">u</span><span id="Echar3591" class="elcText3 x4" style="cursor:pointer;">x</span><span
+      id="Echar3592" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3593" class="elcText3 k4" style="cursor:pointer;">K</span><span id="Echar3594" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3595" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3596" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3597" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3598" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3599" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3600" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3601" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3602" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3603" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3604" class="elcText3 r4" style="cursor:pointer;">r</span>
+
+      <span id="Echar3605" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3606" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3607" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3608" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3609" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3610" class="elcText3 p4" style="cursor:pointer;">P</span><span id="Echar3611" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3612" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3613" class="elcText3 d4" style="cursor:pointer;">d</span>
+
+      <span id="Echar3614" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3615" class="elcText3 p4" style="cursor:pointer;">p</span><span
+      id="Echar3616" class="elcText3 i4" style="cursor:pointer;">i</span>
+
+      <span id="Echar3617" class="elcText3 w4" style="cursor:pointer;">w</span><span id="Echar3618" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3619" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3620" class="elcText3 s4" style="cursor:pointer;">s</span>
+
+      <span id="Echar3621" class="elcText3 s4" style="cursor:pointer;">s</span><span id="Echar3622" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3623" class="elcText3 h4" style="cursor:pointer;">h</span>
+
+      <span id="Echar3624" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3625" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3626" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3627" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3628" class="elcText3 o4" style="cursor:pointer;">o</span><span id="Echar3629" class="elcText3 d4" style="cursor:pointer;">d</span>
+
+      <span id="Echar3630" class="elcText3 g4" style="cursor:pointer;">g</span><span id="Echar3631" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3632" class="elcText3 i4" style="cursor:pointer;">i</span><span id="Echar3633" class="elcText3 w4" style="cursor:pointer;">w</span>
+
+      <span id="Echar3634" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3635" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3636" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3637" class="elcText3 z4" style="cursor:pointer;">z</span>
+
+      <span id="Echar3638" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3639" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3640" class="elcText3 s4" style="cursor:pointer;">s</span>
+
+      <span id="Echar3641" class="elcText3 d4" style="cursor:pointer;">d</span><span id="Echar3642" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3643" class="elcText3 o4" style="cursor:pointer;">o</span><span id="Echar3644" class="elcText3 g4" style="cursor:pointer;">g</span><span
+      id="Echar3645" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3646" class="elcText3 t4" style="cursor:pointer;">T</span><span id="Echar3647" class="elcText3 y4" style="cursor:pointer;">y</span><span
+      id="Echar3648" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3649" class="elcText3 p4" style="cursor:pointer;">p</span><span
+      id="Echar3650" class="elcText3 e4" style="cursor:pointer;">e</span><span id="Echar3651" class="elcText3 s4" style="cursor:pointer;">s</span>
+
+      <span id="Echar3652" class="elcText3 q4" style="cursor:pointer;">q</span><span id="Echar3653" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3654" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3655" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3656" class="elcText3 s4" style="cursor:pointer;">s</span>
+
+      <span id="Echar3657" class="elcText3 g4" style="cursor:pointer;">g</span><span id="Echar3658" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3659" class="elcText3 e4" style="cursor:pointer;">e</span><span id="Echar3660" class="elcText3 z4" style="cursor:pointer;">z</span>
+
+      <span id="Echar3661" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3662" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3663" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3664" class="elcText3 s4" style="cursor:pointer;">s</span>
+
+      <span id="Echar3665" class="elcText3 k4" style="cursor:pointer;">k</span><span id="Echar3666" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3667" class="elcText3 g4" style="cursor:pointer;">g</span><span id="Echar3668" class="elcText3 i4" style="cursor:pointer;">i</span>
+
+      <span id="Echar3669" class="elcText3 z4" style="cursor:pointer;">z</span><span id="Echar3670" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3671" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3672" class="elcText3 c4" style="cursor:pointer;">c</span>
+
+      <span id="Echar3673" class="elcText3 w4" style="cursor:pointer;">w</span><span id="Echar3674" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3675" class="elcText3 d4" style="cursor:pointer;">d</span>
+
+      <span id="Echar3676" class="elcText3 s4" style="cursor:pointer;">s</span><span id="Echar3677" class="elcText3 n4" style="cursor:pointer;">n</span><span
+      id="Echar3678" class="elcText3 o4" style="cursor:pointer;">o</span><span id="Echar3679" class="elcText3 t4" style="cursor:pointer;">t</span><span
+      id="Echar3680" class="elcText3 e4" style="cursor:pointer;">e</span><span id="Echar3681" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3682" class="elcText3 d4" style="cursor:pointer;">D</span><span id="Echar3683" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3684" class="elcText3 w4" style="cursor:pointer;">w</span><span id="Echar3685" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3686" class="elcText3 l4" style="cursor:pointer;">l</span>
+
+      <span id="Echar3687" class="elcText3 g4" style="cursor:pointer;">g</span><span id="Echar3688" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3689" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3690" class="elcText3 k4" style="cursor:pointer;">k</span><span id="Echar3691" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3692" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3693" class="elcText3 c4" style="cursor:pointer;">c</span><span
+      id="Echar3694" class="elcText3 h4" style="cursor:pointer;">h</span>
+
+      <span id="Echar3695" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3696" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3697" class="elcText3 m4" style="cursor:pointer;">m</span>
+
+      <span id="Echar3698" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3699" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3700" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3701" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3702" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3703" class="elcText3 l4" style="cursor:pointer;">L</span><span id="Echar3704" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3705" class="elcText3 v4" style="cursor:pointer;">v</span><span id="Echar3706" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3707" class="elcText3 h4" style="cursor:pointer;">h</span>
+
+      <span id="Echar3708" class="elcText3 d4" style="cursor:pointer;">d</span><span id="Echar3709" class="elcText3 r4" style="cursor:pointer;">r</span><span
+      id="Echar3710" class="elcText3 a4" style="cursor:pointer;">a</span><span id="Echar3711" class="elcText3 n4" style="cursor:pointer;">n</span>
+
+      <span id="Echar3712" class="elcText3 w4" style="cursor:pointer;">w</span><span id="Echar3713" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3714" class="elcText3 k4" style="cursor:pointer;">k</span>
+
+      <span id="Echar3715" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3716" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3717" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3718" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3719" class="elcText3 p4" style="cursor:pointer;">p</span><span id="Echar3720" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3721" class="elcText3 n4" style="cursor:pointer;">N</span><span id="Echar3722" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3723" class="elcText3 f4" style="cursor:pointer;">f</span><span id="Echar3724" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3725" class="elcText3 g4" style="cursor:pointer;">g</span>
+
+      <span id="Echar3726" class="elcText3 g4" style="cursor:pointer;">g</span><span id="Echar3727" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3728" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3729" class="elcText3 f4" style="cursor:pointer;">f</span>
+
+      <span id="Echar3730" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3731" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3732" class="elcText3 x4" style="cursor:pointer;">x</span><span id="Echar3733" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3734" class="elcText3 p4" style="cursor:pointer;">p</span>
+
+      <span id="Echar3735" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3736" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3737" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3738" class="elcText3 c4" style="cursor:pointer;">c</span>
+
+      <span id="Echar3739" class="elcText3 m4" style="cursor:pointer;">m</span><span id="Echar3740" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3741" class="elcText3 y4" style="cursor:pointer;">y</span><span id="Echar3742" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3743" class="elcText3 d4" style="cursor:pointer;">d</span>
+
+      <span id="Echar3744" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3745" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3746" class="elcText3 z4" style="cursor:pointer;">z</span><span id="Echar3747" class="elcText3 o4" style="cursor:pointer;">o</span><span
+      id="Echar3748" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3749" class="elcText3 f4" style="cursor:pointer;">f</span>
+
+      <span id="Echar3750" class="elcText3 g4" style="cursor:pointer;">g</span><span id="Echar3751" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3752" class="elcText3 e4" style="cursor:pointer;">e</span><span id="Echar3753" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3754" class="elcText3 ." style="cursor:pointer;">.</span>
+      </div>
+
+    <div id="okd2">
+      <span id="Echar3755" class="elcText3 g4" style="cursor:pointer;">G</span><span id="Echar3756" class="elcText3 a4" style="cursor:pointer;">a</span><span
+      id="Echar3757" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3758" class="elcText3 e4" style="cursor:pointer;">e</span>
+
+      <span id="Echar3759" class="elcText3 f4" style="cursor:pointer;">f</span><span id="Echar3760" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3761" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3762" class="elcText3 h4" style="cursor:pointer;">h</span>
+
+      <span id="Echar3763" class="elcText3 n4" style="cursor:pointer;">n</span><span id="Echar3764" class="elcText3 e4" style="cursor:pointer;">e</span><span
+      id="Echar3765" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3766" class="elcText3 k4" style="cursor:pointer;">k</span><span
+      id="Echar3767" class="elcText3 o4" style="cursor:pointer;">o</span><span id="Echar3768" class="elcText3 ." style="cursor:pointer;">.</span>
+
+      <span id="Echar3769" class="elcText3 v4" style="cursor:pointer;">V</span><span id="Echar3770" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3771" class="elcText3 t4" style="cursor:pointer;">t</span><span id="Echar3772" class="elcText3 e4" style="cursor:pointer;">e</span>
+
+      <span id="Echar3773" class="elcText3 s4" style="cursor:pointer;">s</span><span id="Echar3774" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3775" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3776" class="elcText3 c4" style="cursor:pointer;">c</span>
+
+      <span id="Echar3777" class="elcText3 d4" style="cursor:pointer;">d</span><span id="Echar3778" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3779" class="elcText3 s4" style="cursor:pointer;">s</span><span id="Echar3780" class="elcText3 p4" style="cursor:pointer;">p</span><span
+      id="Echar3781" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3782" class="elcText3 o4" style="cursor:pointer;">o</span>
+
+      <span id="Echar3783" class="elcText3 p4" style="cursor:pointer;">p</span><span id="Echar3784" class="elcText3 i4" style="cursor:pointer;">i</span><span
+      id="Echar3785" class="elcText3 r4" style="cursor:pointer;">r</span><span id="Echar3786" class="elcText3 n4" style="cursor:pointer;">n</span>
+
+      <span id="Echar3787" class="elcText3 l4" style="cursor:pointer;">l</span><span id="Echar3788" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3789" class="elcText3 i4" style="cursor:pointer;">i</span><span id="Echar3790" class="elcText3 t4" style="cursor:pointer;">t</span>
+
+      <span id="Echar3791" class="elcText3 q4" style="cursor:pointer;">q</span><span id="Echar3792" class="elcText3 u4" style="cursor:pointer;">u</span><span
+      id="Echar3793" class="elcText3 e4" style="cursor:pointer;">e</span><span id="Echar3794" class="elcText3 p4" style="cursor:pointer;">p</span><span
+      id="Echar3795" class="elcText3 s4" style="cursor:pointer;">s</span>
+
+      <span id="Echar3796" class="elcText3 u4" style="cursor:pointer;">u</span><span id="Echar3797" class="elcText3 p4" style="cursor:pointer;">p</span><span
+      id="Echar3798" class="elcText3 y4" style="cursor:pointer;">y</span>
+
+      <span id="Echar3799" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3800" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3801" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3802" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3803" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3804" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3805" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3806" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3807" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3808" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3809" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3810" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3811" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3812" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3813" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3814" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3815" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3816" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3817" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3818" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3819" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3820" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3821" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3822" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3823" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3824" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3825" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3826" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3827" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3828" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3829" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3830" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3831" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3841" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3842" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3843" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3844" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3845" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3846" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3847" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3848" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3849" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3850" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3851" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3852" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3853" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3854" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3855" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3856" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3857" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3858" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3859" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3860" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3861" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3862" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3863" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3864" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3865" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3866" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3867" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3868" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3869" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3870" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3871" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3872" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3873" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3874" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3875" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3876" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3877" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3878" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3879" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3880" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3881" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3882" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3883" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3884" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3885" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3886" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3887" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3888" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3889" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3890" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3891" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3892" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3893" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3894" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3895" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3896" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3897" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3898" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3899" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3900" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3901" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3902" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3903" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3904" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3905" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3906" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3907" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3908" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3909" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3910" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3911" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3912" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3913" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3914" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3915" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3916" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3917" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3918" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3919" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3920" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3921" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3922" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3923" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3924" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3925" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3926" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3927" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3928" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3929" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3930" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3931" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3932" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3933" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3934" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3935" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3936" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3937" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3938" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3939" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3940" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3941" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3942" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3943" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3944" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3945" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3946" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3947" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3948" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3949" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3950" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3951" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3952" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3953" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3954" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3955" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3956" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3957" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3958" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3959" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3960" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3961" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3962" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3963" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3964" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3965" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3966" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3967" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3968" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3969" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3970" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3971" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3972" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3973" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3974" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3975" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3976" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3977" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3978" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3979" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3980" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3981" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3982" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3983" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3984" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3985" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3986" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3987" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3988" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3989" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3990" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3991" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3992" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3993" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3994" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3995" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3996" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar3997" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar3998" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar3999" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4000" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4001" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar4002" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4003" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4004" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4005" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4006" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar4007" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4008" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4009" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4010" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar4011" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4012" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4013" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4015" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4016" class="elcText3 b4" style="cursor:pointer;">b</span>
+
+      <span id="Echar4017" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4018" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4019" class="elcText3 b4" style="cursor:pointer;">b</span><span id="Echar4020" class="elcText3 b4" style="cursor:pointer;">b</span><span
+      id="Echar4021" class="elcText3 b4" style="cursor:pointer;">b</span>
+    </div>
+
+    <div id="okd3">
+      <span id="Echar4022" class="elcText3 b4" style="cursor:pointer;">b</span>
+    </div>
+
+    <div id="okd4">
+    </div>
+
+    <div id="okd5">
+    </div>
+
+    <div id="okd6">
+    </div>
+
+    <div id="okd7">
+    </div>
+
+    <div id="okd8">
+    </div>
+
+    <div id="okd9">
+    </div>
+
+    <div id="okd10">
+    </div  >
   </fieldset>
 </form>
 <script src="js/bootstrap.js"></script>

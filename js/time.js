@@ -4,6 +4,8 @@ let countdownTimer;
 function countdown(){
   document.getElementById('fieldset1').style.display = 'none';
   document.getElementById('fieldset2').style.display = 'block';
+  document.getElementById('eye').style.display = 'block';
+  ou();
   countdownTimer = setInterval(function(){
     if (timeout>0){
       timeout--;

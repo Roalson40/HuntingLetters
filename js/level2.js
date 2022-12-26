@@ -299,6 +299,7 @@ function check2(click1)
     index++;
 
     function timerForHuntingLetter3(time){
+      increment();
       let huntingLetter3 = setInterval(function () {
         if (time <= 3 && time > 2) {
           click1.classList.add("correct")
@@ -312,7 +313,7 @@ function check2(click1)
         } else if (time <= 0) {
           click1.classList.remove("correct");
           clearInterval(huntingLetter3);
-          if (index === 6){
+          if (index === 6 && counterVal === 60){
             document.getElementById('fieldset1').style.display = 'none';
             document.getElementById('fieldset2').style.display = 'none';
             document.getElementById('fieldset3').style.display = 'none';
@@ -321,7 +322,12 @@ function check2(click1)
             index = 0;
             subLevel="C";
             document.getElementById('subLevel').innerHTML = "SubLevel : " + subLevel;
+            resetCounter();
             ou2();
+          }
+          if (index === 6 && counterVal !== 60){
+            reset();
+            resetCounter();
           }
         }
       },300)
@@ -331,6 +337,7 @@ function check2(click1)
   {
     timerForHuntingLetter4(3)
     function timerForHuntingLetter4(time){
+      decrement();
       let huntingLetter4 = setInterval(function () {
         if (time <= 3 && time > 2){
           click1.classList.add("wrong")

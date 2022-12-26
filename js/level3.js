@@ -200,6 +200,7 @@ function check3(click2)
     index++;
 
     function timerForHuntingLetter5(time){
+      increment();
       let huntingLetter5 = setInterval(function () {
         if (time <= 3 && time > 2) {
           click2.classList.add("correct")
@@ -213,7 +214,7 @@ function check3(click2)
         } else if (time <= 0) {
           click2.classList.remove("correct");
           clearInterval(huntingLetter5);
-          if (index === 13){
+          if (index === 13 && counterVal === 130){
             document.getElementById('fieldset1').style.display = 'none';
             document.getElementById('fieldset2').style.display = 'none';
             document.getElementById('fieldset3').style.display = 'none';
@@ -222,6 +223,7 @@ function check3(click2)
             index = 0;
             subLevel="D";
             document.getElementById('subLevel').innerHTML = "SubLevel : " + subLevel;
+            resetCounter();
           }
         }
       },300)
@@ -231,6 +233,7 @@ function check3(click2)
   {
     timerForHuntingLetter6(3)
     function timerForHuntingLetter6(time){
+      decrement();
       let huntingLetter6 = setInterval(function () {
         if (time <= 3 && time > 2){
           click2.classList.add("wrong")
