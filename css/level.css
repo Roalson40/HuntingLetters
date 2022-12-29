@@ -21,7 +21,7 @@ html {
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   padding: 20px 30px;
   box-sizing: border-box;
-  width: 50%;
+  width: 90%;
   min-width: 800px;
   overflow-x: auto;
   margin: auto;
@@ -68,6 +68,11 @@ html {
   font-size: 30px;
 }
 
+.elcText3{
+  color: white;
+  font-size: 30px;
+}
+
 .correct{
   color: lawngreen;
 }
@@ -110,4 +115,20 @@ html {
   transition-duration: 0.5s;
   filter: brightness(1);
   background-color: rgb(237,20,0);
+}
+
+#win{
+  border-radius: 2px;
+
+}
+
+.btn{
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
 }

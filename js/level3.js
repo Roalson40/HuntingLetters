@@ -174,19 +174,19 @@ function check3(click2)
   let c = document.querySelectorAll("." + characters2[index]);
   for (let i = 0; i < c.length; i++)
   {
-    if (!(c[i].classList.contains("before2")))
+    if (!(c[i].classList.contains("before")))
     {
-      c[i].classList.add('checking2');
+      c[i].classList.add('checking');
       break;
     }
   }
 
-  if ((click2.classList.contains("checking2")) && !(click2.classList.contains("before2")))
+  if ((click2.classList.contains("checking")) && !(click2.classList.contains("before")))
   {
     timerForHuntingLetter5(3)
 
 
-    click2.classList.remove("checking2");
+    click2.classList.remove("checking");
     let num2 = click2.id.split("r");
 
     let text2 = document.querySelectorAll(".elcText2");
@@ -194,7 +194,7 @@ function check3(click2)
       let beforeItems2 = text2[i].id.split("r");
 
       if (beforeItems2[1] <= num2[1]) {
-        text2[i].classList.add("before2");
+        text2[i].classList.add("before");
       }
     }
     index++;
@@ -214,7 +214,7 @@ function check3(click2)
         } else if (time <= 0) {
           click2.classList.remove("correct");
           clearInterval(huntingLetter5);
-          if (index === 13 && counterVal === 130){
+          if (level=== "1" && index === 13 && counterVal === 130){
             document.getElementById('fieldset1').style.display = 'none';
             document.getElementById('fieldset2').style.display = 'none';
             document.getElementById('fieldset3').style.display = 'none';
@@ -224,6 +224,28 @@ function check3(click2)
             subLevel="D";
             document.getElementById('subLevel').innerHTML = "SubLevel : " + subLevel;
             resetCounter();
+            ou3();
+          }
+          else if (level=== "2" && index === 13 && counterVal === 130){
+            document.getElementById('fieldset1').style.display = 'none';
+            document.getElementById('fieldset2').style.display = 'none';
+            document.getElementById('fieldset3').style.display = 'none';
+            document.getElementById('fieldset4').style.display = 'none';
+            document.getElementById('fieldset5').style.display = 'block';
+            index = 0;
+            subLevel="D";
+            document.getElementById('subLevel').innerHTML = "SubLevel : " + subLevel;
+            level = "2";
+            document.getElementById('level').innerHTML="Level : "+ level;
+            resetCounter();
+            ou3();
+          }
+          else if (level=== "1" && index === 13 && counterVal !== 130){
+            reset();
+            resetCounter();
+          }
+          else if (level === "2" && subLevel === "C"){
+            classColor();
           }
         }
       },300)

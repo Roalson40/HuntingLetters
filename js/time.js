@@ -5,8 +5,13 @@ function countdown(){
   document.getElementById('fieldset1').style.display = 'none';
   document.getElementById('fieldset2').style.display = 'block';
   document.getElementById('eye').style.display = 'block';
-  ou();
+  subLevel = "A";
+  document.getElementById('subLevel').innerHTML="SubLevel : "+subLevel;
+  level = "1";
+  document.getElementById('level').innerHTML="Level : "+level;
+    ou();
   countdownTimer = setInterval(function(){
+    console.log("uytjygjyg");
     if (timeout>0){
       timeout--;
       refreshTime0();
@@ -22,7 +27,7 @@ function refreshTime0(){
 }
 
 function destroy0(){
-    timeout=0;
+  timeout=0;
     clearInterval(countdownTimer);
     refreshTime0();
 }

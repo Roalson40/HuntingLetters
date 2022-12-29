@@ -174,19 +174,19 @@ function check2(click1)
   let b = document.querySelectorAll("." + characters1[index]);
   for (let i = 0; i < b.length; i++)
   {
-    if (!(b[i].classList.contains("before1")))
+    if (!(b[i].classList.contains("before")))
     {
-      b[i].classList.add('checking1');
+      b[i].classList.add('checking');
       break;
     }
   }
 
-  if ((click1.classList.contains("checking1")) && !(click1.classList.contains("before1")))
+  if ((click1.classList.contains("checking")) && !(click1.classList.contains("before")))
   {
     timerForHuntingLetter3(3)
 
 
-    click1.classList.remove("checking1");
+    click1.classList.remove("checking");
     let num1 = click1.id.split("r");
 
     let text1 = document.querySelectorAll(".elcText1");
@@ -194,7 +194,7 @@ function check2(click1)
       let beforeItems1 = text1[i].id.split("r");
 
       if (beforeItems1[1] <= num1[1]) {
-        text1[i].classList.add("before1");
+        text1[i].classList.add("before");
       }
 
     //   let b = document.querySelectorAll(".bb");
@@ -313,7 +313,7 @@ function check2(click1)
         } else if (time <= 0) {
           click1.classList.remove("correct");
           clearInterval(huntingLetter3);
-          if (index === 6 && counterVal === 60){
+          if (level=== "1" && index === 6 && counterVal === 60){
             document.getElementById('fieldset1').style.display = 'none';
             document.getElementById('fieldset2').style.display = 'none';
             document.getElementById('fieldset3').style.display = 'none';
@@ -325,9 +325,30 @@ function check2(click1)
             resetCounter();
             ou2();
           }
-          if (index === 6 && counterVal !== 60){
+          else if (level=== "2" && index === 6 && counterVal === 60){
+            document.getElementById('fieldset1').style.display = 'none';
+            document.getElementById('fieldset2').style.display = 'none';
+            document.getElementById('fieldset3').style.display = 'none';
+            document.getElementById('fieldset4').style.display = 'block';
+            document.getElementById('fieldset5').style.display = 'none';
+            index = 0;
+            subLevel="C";
+            document.getElementById('subLevel').innerHTML = "SubLevel : " + subLevel;
+            level = "2";
+            document.getElementById('level').innerHTML="Level : "+ level;
+            resetCounter();
+            ou2();
+          }
+          else if (level=== "1" && index === 6 && counterVal !== 60){
             reset();
             resetCounter();
+          }
+          else if (level=== "2" && index === 6 && counterVal !== 60){
+            reset();
+            resetCounter();
+          }
+          else if (level === "2" && subLevel === "B"){
+            classColor();
           }
         }
       },300)
