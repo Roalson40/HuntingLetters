@@ -13,7 +13,7 @@ function countdown(){
   countdownTimer = setInterval(function(){
     console.log("uytjygjyg");
     if (timeout>0){
-      timeout--;
+      timeout-=50;
       refreshTime0();
     }
     else if (timeout<=0){
@@ -23,11 +23,13 @@ function countdown(){
 }
 
 function refreshTime0(){
-  document.getElementById('time').innerHTML="Time : "+timeout;
+  document.getElementById('time').innerHTML="Daily training : "+timeout;
 }
 
 function destroy0(){
   timeout=0;
     clearInterval(countdownTimer);
     refreshTime0();
+document.getElementById('win').style.display = 'block';
+document.getElementById('win1').style.display = 'block';
 }

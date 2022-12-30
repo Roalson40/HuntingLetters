@@ -1,4 +1,4 @@
-let characters2 = new Array("a3","b3","c3","d3","e3","f3","g3","h3","i3","j3","k3","l3","m3");
+
 
 function ou2() {
   let randomBgIndex2 = Math.floor(Math.random() * 10);

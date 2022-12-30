@@ -6,17 +6,13 @@
   <title>HuntingLetters</title>
   <link rel="stylesheet" href="css/level.css">
   <script src="js/level.js" defer></script>
-  <script src="js/level2.js" defer></script>
-  <script src="js/level3.js" defer></script>
-  <script src="js/level4.js" defer></script>
-  <script src="js/time.js" defer></script>
 </head>
 
 <body>
 
 <div id="nav" style="width: 100%">
 <div>
-  <button id="fresh1" class="fresh" type="button" onclick="fresh()">restart</button>
+  <button id="fresh1" class="fresh" type="button" onclick="refresh()">restart</button>
 </div>
   <div>
     <label id="time" style="color:white; font-size: 25px">Daily training : 150</label>
@@ -31,14 +27,14 @@
     <label id="counter-label" style="color:white; font-size: 25px">Score : 0</label>
     <br>
     <br>
-    <label id="eye" style="color:white; font-size: 25px; display: none">Eye : Right</label>
+    <label id="eye" style="color:white; font-size: 25px;">Eye : Right</label>
   </div>
-<!--  <div id="win" style="text-align: center; justify-content: center; align-items: center; display: none">-->
-<!--  <h2 style="color: white">Time is up, here are two button functions for you to choose</h2>-->
-<!--</div>-->
-<!--  <div id="win1" style="text-align: center; justify-content: center; align-items: center; display: none">-->
-<!--    <button class="btn">change eye</button> <button class="btn">continue</button>-->
-<!--  </div>-->
+  <div id="win" style="text-align: center; justify-content: center; align-items: center; display: none">
+  <h2 style="color: white">Time is up, here are two button functions for you to choose</h2>
+</div>
+  <div id="win1" style="text-align: center; justify-content: center; align-items: center; display: none ">
+    <button id="btn1" class="btn">change eye</button> <button class="btn">continue</button>
+  </div>
 </div>
 
 <form id="msform">
@@ -46,7 +42,6 @@
   <fieldset id="fieldset1">
 
     <h1 style="color: white">Time for daily training</h1>
-    <h1 id="eyes" style="color: white">Are you ready use the right eye</h1>
     <br>
     <br>
 

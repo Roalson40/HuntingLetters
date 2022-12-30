@@ -1,4 +1,3 @@
-let characters3 = new Array("a4","b4","c4","d4","e4","f4","g4","h4","i4","j4","k4","l4","m4","n4","o4","p4","q4","r4","s4","t4","u4","v4","w4","x4","y4","z4");
 
 function ou3(){
   let randomBgIndex3 = Math.floor(Math.random() * 5);
