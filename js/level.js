@@ -13,6 +13,7 @@ let countdownTimer;
 let plate = document.getElementById("plate");
 
 document.getElementById('btn1').onclick = () => iiii();
+document.getElementById('btn2').onclick = () => iii();
 window.onload = function (){
   let body = document.getElementById('counter-label');
   setInterval(decrease,1000)
@@ -137,6 +138,25 @@ function classColor(){
 function iiii(){
   change();
   refresh();
+  document.getElementById('win').style.display = 'none';
+  document.getElementById('win1').style.display = 'none';
+}
+
+function iii(){
+  timeout = 150;
+  refreshTime0();
+  countdownTimer = setInterval(function(){
+    console.log("uytjygjyg");
+    if (timeout>0){
+      timeout-=10;
+      refreshTime0();
+    }
+    else if (timeout<=0){
+      destroy0();
+    }
+  }, 1000);
+  document.getElementById('win').style.display = 'none';
+  document.getElementById('win1').style.display = 'none';
 }
 
 function refresh(){
