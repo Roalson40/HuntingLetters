@@ -148,7 +148,7 @@ function iii(){
   countdownTimer = setInterval(function(){
     console.log("uytjygjyg");
     if (timeout>0){
-      timeout-=10;
+      timeout--;
       refreshTime0();
     }
     else if (timeout<=0){
